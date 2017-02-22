@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.datetime :expire_time
+      t.string :offer_type
 
       t.timestamps null: false
     end
