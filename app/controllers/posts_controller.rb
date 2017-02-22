@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    render html: "current user: " + current_user.id.to_s
     @posts = Post.all
   end
 
